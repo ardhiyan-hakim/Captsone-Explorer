@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Explorer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/style.css">
-	</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
   <body>
+    <!-- Skip To Content -->
+    <div class="skip-to-content">
+      <a href="#content" class="skip-button">Menuju Ke Konten</a>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container-fluid">
@@ -68,18 +76,18 @@
           <div class="carousel-caption">
             <h2 class="display-2">Let's Coding</h2>
             <h3>Which One Do You Prefer ?</h3>
-            <button class="btn btn-primary btn-lg" type="button">
-              FRONT END
-            </button>
-            <button class="btn btn-primary btn-lg" type="button">
-              BACK END
-            </button>
+            <a href="/src/templates/html5.html" class="btn btn-primary btn-lg"
+              >FRONT - END</a
+            >
+            <a href="#class-section" class="btn btn-primary btn-lg"
+              >BACK - END</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <main>
+    <main id="content">
       <!--- Welcome Section -->
       <div class="container-fluid padding" id="class-section">
         <div class="row welcome text-center col-12">
@@ -101,15 +109,18 @@
           <div class="col-sm-6 col-md-4 selection-item">
             <i class="fab fa-html5"></i>
             <h3>HTML5</h3>
-            <p>The skeleton of everything that you see in browser.</p>
-            <a href="#" type="button" class="btn btn-outline-primary btn-md"
+            <p>The skeleton of everything that you see in your browser.</p>
+            <a
+              href="/src/templates/html5.html"
+              type="button"
+              class="btn btn-outline-primary btn-md"
               >Learn HTML5</a
             >
           </div>
           <div class="col-sm-6 col-md-4 selection-item">
             <i class="fab fa-css3"></i>
             <h3>CSS</h3>
-            <p>Decoration, color, and layout of every component.</p>
+            <p>Decoration, color, design and layouting of every component.</p>
             <a href="#" type="button" class="btn btn-outline-primary btn-md"
               >Learn CSS3</a
             >
@@ -130,7 +141,7 @@
       <div class="container-fluid">
         <div class="row padding">
           <div class="col-lg-6">
-            <h2 class="title-box">What Makes Us Different</h2>
+            <h2 class="title-box">What Make Us Different</h2>
             <p class="text-justify text-box">
               We truly appreciate for every people that join our community, as
               doing it solo can be hard, it would easier to do this together.
@@ -139,7 +150,6 @@
               our account social media and guess what ? You just got your
               PRIVATE MENTOR.
             </p>
-            <a href="#" class="btn btn-primary btn-md">More Detail</a>
           </div>
           <div class="col-lg-6">
             <img src="src/img/desk.jpg" alt="..." class="img-fluid" />
@@ -153,7 +163,7 @@
         <div class="welcome text-center">
           <div class="col-12">
             <h2 class="display-4" id="about-us">About Us</h2>
-            <hr>
+            <hr />
           </div>
         </div>
       </div>
@@ -163,21 +173,37 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="card">
-              <img src="src/img/team1.png" alt="..." class="card-img-top" />
+              <img src="src/img/team1.jpg" alt="..." class="card-img-top" />
               <div class="card-body">
                 <h3 class="card-title">Ardhiyan Abdul Hakim</h3>
                 <p class="card-text">
                   Student in University of Jenderal Soedirman,<br />Bachelor
                   Degree of Electrical Engineering
                 </p>
-								<hr>
+                <hr />
                 <div class="row text-center">
                   <div class="col-12 social">
-                    <a href="https://www.facebook.com/ardhiyan.abdul/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/AnonymBeing" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/yaaaaaaaaaannnnn/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ardhiyanah/ " target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/ardhiyan-hakim" target="_blank"><i class="fab fa-github"></i></a>
+                    <a
+                      href="https://www.facebook.com/ardhiyan.abdul/"
+                      target="_blank"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="https://twitter.com/AnonymBeing" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/yaaaaaaaaaannnnn/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/ardhiyanah/ "
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/ardhiyan-hakim" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -185,21 +211,35 @@
           </div>
           <div class="col-sm-6">
             <div class="card">
-              <img src="src/img/team2.png" alt="..." class="card-img-top" />
+              <img src="src/img/team2.jpg" alt="..." class="card-img-top" />
               <div class="card-body">
                 <h3 class="card-title">Rizqi Fauzul Fitria</h3>
                 <p class="card-text">
                   Student in University of Diponegoro,<br />Bachelor Degree of
                   Industrial Engineering
                 </p>
-								<hr>
+                <hr />
                 <div class="row text-center">
                   <div class="col-12 social">
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/rizqifauzul_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rizqifauzulfitria/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/rizqifauzul_/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/rizqifauzulfitria/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -246,23 +286,36 @@
       <div class="container-fluid">
         <div class="row footer-info">
           <div class="col-md-6">
-            <h3 class="text-center">explorer<img src="src/img/logo1.png" alt="" /></h3>
-						<hr class="footer-hr" />
-						<div class="footer-detail text-justify">
-							<p>Call : 555-555</p>
-							<p>Mail : <a href="mailto:ardhiyan.hakim@mhs.unsoed.ac.id">explorer@gmail.com</a></p>
-							<p>Address : Pasar Jaya Lenteng Agung Lantai Dasar Nomor 212 Raya Kecamatan Jagakarsa, Jl. Raya Jagakarsa No.211, RT.3/RW.1, Jagakarsa, Kec. Jagakarsa, DKI Jakarta, Daerah Khusus Ibukota Jakarta 12630</p>
-						</div>
+            <hr class="footer-hr" />
+            <h3 class="text-center">
+              explorer<img src="src/img/logo1.png" alt="" />
+            </h3>
+            <hr class="footer-hr" />
+            <div class="footer-detail text-justify">
+              <p>Call : 555-555</p>
+              <p>
+                Mail :
+                <a href="mailto:ardhiyan.hakim@mhs.unsoed.ac.id"
+                  >explorer@gmail.com</a
+                >
+              </p>
+              <p>
+                Address : Pasar Jaya Lenteng Agung Lantai Dasar Nomor 212 Raya
+                Kecamatan Jagakarsa, Jl. Raya Jagakarsa No.211, RT.3/RW.1,
+                Jagakarsa, Kec. Jagakarsa, DKI Jakarta, Daerah Khusus Ibukota
+                Jakarta 12630
+              </p>
+            </div>
           </div>
           <div class="col-md-6">
             <hr class="footer-hr" />
-            <h5 class="text-center">Active Time</h5>
+            <h3 class="text-center">Active Time</h3>
             <hr class="footer-hr" />
-						<div class="footer-detail">
-							<p>Monday To Friday : 9am - 5am</p>
-							<p>Saturday : 9am - 3am</p>
-							<p>Sunday : closed</p>
-						</div>
+            <div class="footer-detail">
+              <p>Monday To Friday : 9am - 5am</p>
+              <p>Saturday : 9am - 3am</p>
+              <p>Sunday : closed</p>
+            </div>
           </div>
         </div>
       </div>

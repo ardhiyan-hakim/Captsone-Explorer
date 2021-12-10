@@ -3,7 +3,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 html,
 body {
   width: 100%;
@@ -12,6 +11,20 @@ body {
 }
 .padding {
   padding: 1rem 0px;
+}
+.skip-button {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: indigo;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  z-index: 1100;
+  font-size: 1rem;
+}
+.skip-button:focus {
+  top: 0;
 }
 .logo {
   font-size: 40px;
@@ -31,6 +44,9 @@ footer h3 img {
 }
 .navbar-toggler {
   background-color: #fff;
+}
+.navbar-toggler:hover {
+  transition: all 0.38s;
 }
 .navbar-nav a {
   color: white !important;
@@ -98,6 +114,14 @@ footer h3 img {
 .btn-outline-light:hover {
   transform: scale(0.95);
   transition: all 0.38s ease;
+}
+
+.card {
+  border-radius: 1rem;
+}
+.card img {
+  max-height: 640px;
+  object-fit: cover;
 }
 .fa-html5,
 .fa-css3,
@@ -180,6 +204,10 @@ main {
   width: 75%;
   margin: 0 auto;
 }
+.footer-info h3:nth-child(1){
+  font-size: 2rem;
+}
+
 footer .footer-info, .footer-detail a {
   background-color: rgb(228, 226, 226);
   color: indigo;
@@ -243,12 +271,23 @@ footer p {
   .carousel-caption .btn {
     font-size: 90%;
   }
+  .social a {
+    font-size: 2rem;
+    padding: 0.7rem;
+  }
+  .card img {
+    max-height: 360px;
+    object-fit: cover;
+  }
   .display-4 {
     font-size: 2.5rem;
   }
   .logo img,
   footer h3 img {
     max-width: 40px;
+  }
+  .footer-detail p {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -281,6 +320,14 @@ footer p {
   .selection-item {
     margin-bottom: 45px;
   }
+  .social a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .card img {
+    max-height: 300px;
+    object-fit: cover;
+  }
   h2 .display-4 {
     font-size: 1rem;
   }
@@ -290,6 +337,21 @@ footer p {
   }
   .lead {
     font-size: 0.9rem;
+  }
+  .text-box {
+    font-size: 12px;
+  }
+    .footer-hr {
+    width: 85%;
+  }
+  .footer-info h3 {
+    font-size: 1rem;
+  }
+  .footer-info h3:nth-child(1) {
+    font-size: 1.5rem;
+  }  
+  .footer-detail {
+    width: 85%;
   }
 }
 
