@@ -204,11 +204,12 @@ main {
   width: 75%;
   margin: 0 auto;
 }
-.footer-info h3:nth-child(1){
+.footer-info h3:nth-child(1) {
   font-size: 2rem;
 }
 
-footer .footer-info, .footer-detail a {
+footer .footer-info,
+.footer-detail a {
   background-color: rgb(228, 226, 226);
   color: indigo;
 }
@@ -283,12 +284,16 @@ footer p {
 .main-content.card {
   padding: 40px;
 }
+.main-content h2 a {
+  color: indigo;
+}
+
 .tips {
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  border-left: 5px solid cyan;
-  border-top: 5px solid cyan;
+  border-left: 5px solid indigo;
+  border-top: 5px solid indigo;
   padding: 0px 20px;
-  box-shadow: 5px 5px 1px grey;
+  box-shadow: 5px 5px 1px black;
 }

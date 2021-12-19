@@ -25,8 +25,15 @@
   }
   #buttonClassHTML,
   #buttonClassCSS,
-  #buttonClassJavascript {
+  #buttonClassJavascript,
+  .col-md-12.selection-item {
     font-size: 85%;
+  }
+  .col-md-12.selection-item h1 {
+    font-size: 35px;
+  }
+  .col-md-12.selection-item h2 {
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -72,9 +79,23 @@
   }
   #buttonClassHTML,
   #buttonClassCSS,
-  #buttonClassJavascript {
+  #buttonClassJavascript,
+  .col-md-12.selection-item {
     font-size: 70%;
   }
+  #content .container-fluid {
+    width: 95%;
+  }
+  .tips {
+    width: 87.5%;
+    margin-top: 20px;
+  }
+  .col-md-12.selection-item h1 {
+    font-size: 30px;
+  }
+  .col-md-12.selection-item h2 {
+    font-size: 24px;
+  }  
 }
 @media screen and (max-width: 576px) {
   .logo {
@@ -142,6 +163,23 @@
   .class-change {
     display: none;
   }
+  .col-md-12.selection-item {
+    font-size: 60%;
+  }
+  #content .container-fluid {
+    width: 100%;
+  }
+  .tips {
+    width: 95%;
+    margin-top: 15px;
+    padding: 0px 15px;
+  }
+  .col-md-12.selection-item h1 {
+    font-size: 25px;
+  }
+  .col-md-12.selection-item h2 {
+    font-size: 20px;
+  }  
 }
 
 /*---Firefox Bug Fix --*/
