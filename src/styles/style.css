@@ -118,6 +118,7 @@ footer h3 img {
 
 .card {
   border-radius: 0.5rem;
+  height: 100%;
 }
 .card img {
   max-height: 640px;
@@ -311,4 +312,8 @@ iframe.content {
   width: 70%;
   height: 100%;
   min-height: 420px;
+}
+
+[class*="fab fa-"] {
+  font-size: 1px;
 }
