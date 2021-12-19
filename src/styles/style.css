@@ -124,6 +124,9 @@ footer h3 img {
   max-height: 640px;
   object-fit: cover;
 }
+.card-text {
+  font-size: 14px;
+}
 .fa-html5,
 .fa-css3,
 .fa-js {
@@ -160,8 +163,11 @@ main {
   padding-bottom: 1rem;
 } */
 
+[class*="col-"].social {
+  padding: 0px;
+}
 .social a {
-  font-size: 3rem;
+  font-size: 2.2rem;
   padding: 1rem;
 }
 .fa-facebook {
