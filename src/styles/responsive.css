@@ -4,6 +4,9 @@
   footer h3 img {
     max-width: 55px;
   }
+  iframe.content{
+    width: 95%;
+  }  
 }
 
 @media screen and (max-width: 992px) {
@@ -39,10 +42,9 @@
     width: 85%;
     height: 360px;
   }
-  iframe.content{
-    width: 80%;
-    min-height: 300px;
-  }  
+  iframe.content {
+    min-height: 320px;
+  }
 }
 @media screen and (max-width: 780px) {
   .logo {
@@ -110,10 +112,9 @@
   iframe.home {
     height: 310px;
   }
-  iframe.content{
-    width: 85%;
-    min-height: 260px;
-  }  
+  iframe.content {
+    min-height: 240px;
+  }
 }
 @media screen and (max-width: 576px) {
   .logo {
@@ -142,10 +143,10 @@
   .carousel-indicators {
     display: none;
   }
-  .selection-item {
-    margin-bottom: 45px;
+  .selection-item.item-number {
+    margin-top: 60px;
   }
-  .card-title {
+    .card-title {
     font-size: 20px;
   }
   .card-text {
@@ -206,21 +207,16 @@
   }  
   iframe.home {
     height: 240px;
-  }
-  iframe.content{
-    width: 90%;
-    min-height: 190px;
   }  
+  iframe.content {
+    min-height: 180px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   iframe.home {
     height: 160px;
   }
-  iframe.content{
-    width: 100%;
-    min-height: 150px;
-  }  
   .card-title {
     font-size: 14px;
   }
@@ -230,6 +226,9 @@
   .social a {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+  iframe.content {
+    min-height: 100px;
   }
 }
 

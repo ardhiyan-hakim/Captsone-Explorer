@@ -284,6 +284,10 @@ footer p {
 .selection-item h1 {
   margin-bottom: 30px;
 }
+.selection-item.item-number {
+  margin-top: 80px;
+}
+
 #content .container-fluid,
 .class-change {
   width: 90%;
