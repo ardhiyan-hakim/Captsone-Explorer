@@ -251,10 +251,13 @@ footer p {
   align-items: center;
   margin: 20px 0px;
 }
+.main-content figure.figure-tips {
+  margin-bottom: 30px;
+}
+
 .main-content img {
   min-width: 200px;
   width: 65%;
-  margin-bottom: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 #mosh-hamedani {
@@ -295,10 +298,10 @@ footer p {
 .main-content.card {
   padding: 40px;
 }
-.main-content h2 a {
+.main-content h2 a,
+.tips a {
   color: indigo;
 }
-
 .tips {
   width: 80%;
   margin: 0 auto;
@@ -314,7 +317,7 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-iframe.home {  
+iframe.home {
   width: 100%;
   height: 360px;
 }
@@ -326,4 +329,11 @@ iframe.content {
 
 [class*="fab fa-"] {
   font-size: 1px;
+}
+
+pre {
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 16px;
+  font-size: 16px;
 }

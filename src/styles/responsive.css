@@ -4,9 +4,9 @@
   footer h3 img {
     max-width: 55px;
   }
-  iframe.content{
+  iframe.content {
     width: 95%;
-  }  
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -99,6 +99,9 @@
   #content .container-fluid {
     width: 95%;
   }
+  .main-content figure {
+    margin: 0px;
+  }
   .tips {
     width: 87.5%;
     margin-top: 20px;
@@ -108,7 +111,7 @@
   }
   .col-md-12.selection-item h2 {
     font-size: 24px;
-  }  
+  }
   iframe.home {
     height: 310px;
   }
@@ -146,7 +149,7 @@
   .selection-item.item-number {
     margin-top: 60px;
   }
-    .card-title {
+  .card-title {
     font-size: 20px;
   }
   .card-text {
@@ -204,10 +207,10 @@
   }
   .col-md-12.selection-item h2 {
     font-size: 20px;
-  }  
+  }
   iframe.home {
     height: 240px;
-  }  
+  }
   iframe.content {
     min-height: 180px;
   }
@@ -241,10 +244,9 @@
   backface-visibility: visible;
 }
 /*--- Fixed Background Image --*/
-figure {
+.main-content figure {
   position: relative;
   width: 100%;
-  height: 60%;
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
