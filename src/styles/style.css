@@ -249,7 +249,9 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+}
+.main-content figure img {
+  border-radius: 6px;
 }
 .main-content figure.figure-tips {
   margin-bottom: 30px;
@@ -302,6 +304,9 @@ footer p {
 .tips a {
   color: indigo;
 }
+.credits {
+  margin-top: 30px;
+}
 .tips {
   width: 80%;
   margin: 0 auto;
@@ -311,7 +316,6 @@ footer p {
   padding: 0px 20px;
   box-shadow: 5px 5px 1px black;
 }
-
 #iframe-home {
   display: flex;
   justify-content: center;

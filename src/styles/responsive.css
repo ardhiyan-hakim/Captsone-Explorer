@@ -99,9 +99,6 @@
   #content .container-fluid {
     width: 95%;
   }
-  .main-content figure {
-    margin: 0px;
-  }
   .tips {
     width: 87.5%;
     margin-top: 20px;
@@ -247,6 +244,7 @@
 .main-content figure {
   position: relative;
   width: 100%;
+  margin: auto 0;
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
