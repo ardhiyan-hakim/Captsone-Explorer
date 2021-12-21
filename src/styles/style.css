@@ -9,6 +9,17 @@ body {
   font-family: "Poppins", sans-serif;
   color: #222;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: indigo; 
+}
 .padding {
   padding: 1rem 0px;
 }
@@ -244,6 +255,9 @@ footer p {
 .main-content h2 {
   padding: 20px 0px;
 }
+.main-content p {
+  margin: 5px 0 10px;
+}
 .main-content figure {
   display: flex;
   flex-direction: column;
@@ -256,7 +270,9 @@ footer p {
 .main-content figure.figure-tips {
   margin-bottom: 30px;
 }
-
+.main-content li {
+  margin-bottom: 10px;
+}
 .main-content img {
   min-width: 200px;
   width: 65%;
@@ -303,6 +319,9 @@ footer p {
 .main-content h2 a,
 .tips a {
   color: indigo;
+}
+.tips p {
+  margin: 0 0 16px;
 }
 .credits {
   margin-top: 30px;

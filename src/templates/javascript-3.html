@@ -55,17 +55,26 @@
     <main>
       <div class="class-change row text-center">
         <div class="col-sm-4">
-          <a href="/src/templates/html5.html" id="buttonClassHTML" class="btn btn-primary btn-lg"
+          <a
+            href="/src/templates/html5.html"
+            id="buttonClassHTML"
+            class="btn btn-primary btn-lg"
             >Learn HTML</a
           >
         </div>
         <div class="col-sm-4">
-          <a href="/src/templates/css-1.html" id="buttonClassCSS" class="btn btn-primary btn-lg"
+          <a
+            href="/src/templates/css-1.html"
+            id="buttonClassCSS"
+            class="btn btn-primary btn-lg"
             >Learn CSS</a
           >
         </div>
         <div class="col-sm-4">
-          <a href="/src/templates/javascript-1.html" id="buttonClassJavascript" class="btn btn-primary btn-lg"
+          <a
+            href="/src/templates/javascript-1.html"
+            id="buttonClassJavascript"
+            class="btn btn-primary btn-lg"
             >Learn Javascript</a
           >
         </div>
@@ -74,89 +83,253 @@
         <div class="container-fluid">
           <div class="row text-center padding">
             <div class="col-md-12 selection-item item-content">
-              <h1 class="text-center">Kurikulum HTML</h1>
+              <h1 class="text-center">Praktik Javascript</h1>
               <div class="main-content card text-justify">
                 <p>
-                  Setelah mengetahui tentang apa itu HTML, lantas bagaimana kita
-                  bisa mempelajari bahasa pemrograman tersebut ?                  
+                  Seperti yang sudah dituliskan sebelumnya, saat ini kita akan
+                  membahas tentang bagaimana sebuah metode javascript untuk
+                  dituliskan pada sebuah file HTML
                 </p>
                 <p>
-                  Nah sekarang saya akan memandu kalian tentang apa saja yang
-                  perlu kita pelajari tentang HTML, akan tetapi karena banyaknya
-                  materi yang perlu dijelaskan dalam ini, kami akan menggunakan
-                  pembelajaran dari salah satu sumber pengetahuan kami, yakni
-                  Mosh Hamedani.
+                  Beberapa metode untuk menuliskan kode javascript pada file
+                  HTML dapat ditulis sebagai berikut.
+                  <ol>
+                    <li>
+                      Embed. Metode ini akan menuliskan kode javascript langsung
+                      pada HTML yang akan dituliskan pada elemen body seperti yang
+                      sudah dicontohkan di halaman sebelumnya.
+                    </li>
+                    <li>
+                      Inline. Pada metode ini kita akan menuliskan kode javascript
+                      pada sebuah tag di HTML untuk melakukan trigger sesuatu yang
+                      nanti akan kita contohkan.
+                    </li>
+                    <li>
+                      Eksternal. Metode ini menggunakan sebuah tag khusus bernama
+                      script yang akan disematkan di bagian akhir tag body.
+                    </li>
+                  </ol>
                 </p>
-                <h2>Profil Mosh Hamedani</h2>
+                <h2>1. Penulisan kode Javascript Embed</h2>
+                <p>
+                  Pada metode embed ini kita akan menggunakan tag script untuk bisa
+                  menuliskan kode javascript. Lalu apa bedanya metode embed dengan
+                  metode eksternal jika keduanya sama - sama menggunakan tag script
+                  ? Perbedaannya adalah dimana tag script ini ditaruh.
+                </p>
+                <p>
+                  Seperti yang dijelaskan sebelumnya metode eksternal sendiri
+                  menggunakan tag script yang ditaruh pada bagian akhir sebelum
+                  penutup tag body sedangkan metode embed dituliskan pada bagian
+                  akhir sebelum penutup tag head atau juga bisa di bagian akhir
+                  sebelum penutup tag body. Contohnya sebagai berikut.
+                </p>
+                    <div class="highlight">
+                  <pre
+                    tabindex="0"
+                    style="
+                      color: #f8f8f2;
+                      background-color: #282a36;
+                      -moz-tab-size: 4;
+                      -o-tab-size: 4;
+                      tab-size: 4;
+                    "
+                  ><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#ff79c6">html</span>&gt;
+    &lt;<span style="color:#ff79c6">head</span>&gt;
+        &lt;<span style="color:#ff79c6">title</span>&gt;Belajar Javascript dari Nol&lt;/<span style="color:#ff79c6">title</span>&gt;
+        &lt;<span style="color:#ff79c6">script</span>&gt;
+            <span style="color:#6272a4">// ini adalah penulisan kode javascript
+</span><span style="color:#6272a4"></span>            <span style="color:#6272a4">// di dalam tag &lt;head&gt;
+</span><span style="color:#6272a4"></span>            console.log(<span style="color:#f1fa8c">"Hello JS dari Head"</span>);
+        &lt;/<span style="color:#ff79c6">script</span>&gt;
+    &lt;/<span style="color:#ff79c6">head</span>&gt;
+    &lt;<span style="color:#ff79c6">body</span>&gt;
+        &lt;<span style="color:#ff79c6">p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span style="color:#ff79c6">p</span>&gt;
+        &lt;<span style="color:#ff79c6">script</span>&gt;
+            <span style="color:#6272a4">// ini adalah penulisan kode javascript
+</span><span style="color:#6272a4"></span>            <span style="color:#6272a4">// di dalam tag &lt;body&gt;
+</span><span style="color:#6272a4"></span>            console.log(<span style="color:#f1fa8c">"Hello JS dari body"</span>);
+        &lt;/<span style="color:#ff79c6">script</span>&gt;
+    &lt;/<span style="color:#ff79c6">body</span>&gt;
+&lt;/<span style="color:#ff79c6">html</span>&gt;
+                  </code></pre>
+                </div>
+                <p>
+                  Pada tag manakah yang lebih baik dari metode embed ? Banyak yang
+                  merekomendasikan untuk ditulis pada tag body. Hal ini dikarenakan
+                  akan kode dibaca secara urut berdasarkan baris mulai dari baris
+                  paling atas hingga paling bawah. Karenanya jika kamu menggunakan
+                  metode ini, dan menuliskan kode javascript pada tag head maka
+                  dalam proses loading halaman, halaman akan melakukan render pada
+                  kode javascript terlebih dahulu dan bukannya menampilkan halaman
+                  dari program HTML.
+                </p>
+                <p>
+                  Untuk saat ini waktu yang dibutuhkan halaman untuk me-load kode
+                  javascript hampir tidak terasa karena jumlah teks pada kode
+                  javascript yang masih sedikit. Tapi bisa dibayangkan apa yang akan
+                  terjadi ketika kita memiliki kode javascript hingga ratusan baris
+                  bahkan ribuan. Ini akan berpengaruh terhadap user experience yang
+                  buruk.
+                </p>
+                <h2>2. Penulisan kode Javascript Inline</h2>
+                <p>
+                  Pada metode inline ini kita akan menggunakan attribute HTML
+                  berdasarkan event handler yang disediakan HTML. Event-event ini
+                  akan melakukan trigger secara otomatis berdasarkan jenis event
+                  handler yang digunakan. Contohnya dapat dilihat seperti ini.
+                </p>
+                <div class="highlight">
+                  <pre
+                    tabindex="0"
+                    style="
+                      color: #f8f8f2;
+                      background-color: #282a36;
+                      -moz-tab-size: 4;
+                      -o-tab-size: 4;
+                      tab-size: 4;
+                    "
+                  ><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"#"</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"alert('Yey!')"</span>&gt;Klik aku!&lt;/<span style="color:#ff79c6">a</span>&gt;
+                  </code></pre>
+                </div>
+                <p>
+                  Pada contoh diatas kita menggunakan event handler
+                  "<b>onclick</b>". Event ini akan melakukan trigger ketika tag
+                  bersangkutan di klik dan akan menjalan fungsi
+                  "<b>alert('Yey!')</b>". Kamu bisa membaca lebih lanjut tentang macam-macam event handler yang dapat digunakan untuk website kamu <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">disini</a>.
+                </p>
                 <figure>
-                  <img
-                    id="mosh-hamedani"
-                    src="/src/img/Mosh Hamedani.jpg"
-                    alt="Mosh Hamedani Picture"
-                  />
+                  <img 
+                    src="https://www.petanikode.com/img/js/inline-js.gif" 
+                    alt="Ilustrasi hasil penulisan kode javascript dengan metode inline"
+                    >
+                </figure>
+                <h2>3. Penulisan kode Javascript Eksternal</h2>
+                <p>
+                  Seperti yang dijelaskan sebelumnya, metode ini menggunakan tag
+                  script yang dituliskan sebelum bagian akhir sebuah tag body. Hal
+                  yang berbeda dari kedua metode sebelumnya adalah kita hanya perlu
+                  menyisipkan 1 baris kode pada HTML dan sisanya akan kita tuliskan
+                  di sebuah file terpisah dengan ekstensi "<b>.js</b>" .
+                </p>
+                <p>
+                  Daripada berlama-lama, bagaimana kalau kita langsung mulai membuat
+                  programnya. Pertama-tama kamu perlu membuat sebuah folder bernama
+                  "<b>belajar-js</b>" dan kemudian buatlah 2 buah file bernama
+                  "<b>index.html</b>" dan "<b>kode-program.js</b>" seperti pada
+                  tampilan berikut.
+                </p>
+                <div class="highlight">
+                  <pre
+                    tabindex="0"
+                    style="
+                      color: #f8f8f2;
+                      background-color: #282a36;
+                      -moz-tab-size: 4;
+                      -o-tab-size: 4;
+                      tab-size: 4;
+                    "
+                  ><code class="language-bash" data-lang="bash">belajar-js/
+├── kode-program.js
+└── index.html
+                  </code></pre>
+                </div>
+                <p>Isi dari file "<b>kode-program.js</b>" :</p>
+                <div class="highlight">
+                  <pre
+                    tabindex="0"
+                    style="
+                      color: #f8f8f2;
+                      background-color: #282a36;
+                      -moz-tab-size: 4;
+                      -o-tab-size: 4;
+                      tab-size: 4;
+                    "
+                  ><code class="language-javascript" data-lang="javascript">alert(<span style="color:#f1fa8c">"Hello, ini adalah program JS eksternal!"</span>);
+                  </code></pre>
+                </div>
+
+                <p>Isi dari file "<b>index.html</b>" :</p>
+                <div class="highlight">
+                  <pre
+                    tabindex="0"
+                    style="
+                      color: #f8f8f2;
+                      background-color: #282a36;
+                      -moz-tab-size: 4;
+                      -o-tab-size: 4;
+                      tab-size: 4;
+                    "
+                  ><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#ff79c6">html</span>&gt;
+&lt;<span style="color:#ff79c6">head</span>&gt;
+    &lt;<span style="color:#ff79c6">title</span>&gt;Belajar Javascript dari Nol&lt;/<span style="color:#ff79c6">title</span>&gt;
+&lt;/<span style="color:#ff79c6">head</span>&gt;
+&lt;<span style="color:#ff79c6">body</span>&gt;
+    &lt;<span style="color:#ff79c6">p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span style="color:#ff79c6">p</span>&gt;
+
+    <span style="color:#6272a4">&lt;!-- Menyisipkan kode js eksternal --&gt;</span>
+    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"kode-program.js"</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
+&lt;/<span style="color:#ff79c6">body</span>&gt;
+&lt;/<span style="color:#ff79c6">html</span>&gt;
+                  </code></pre>
+                </div>
+                <p>Hasilnya dapat dilihat sebagai berikut.</p>
+                <figure>
+                  <img 
+                    src="https://www.petanikode.com/img/js/js-eksternal.png" 
+                    alt="Hasil ilustrasi penulisan kode dengan metode eksternal"
+                    >
                 </figure>
                 <p>
-                  Mosh Hamedani adalah seorang figur senior software engineer
-                  yang memiliki spesialisasi di bidang pengembangan aplikasi web
-                  dengan ASP.NET MVC, Web API, Entity Framework, Angular,
-                  Backbone HTML5 dan CSS.
+                  Selamat ya, kamu saat ini telah berhasil menyelesaikan
+                  pembelajaran dasar tentang bagaimana sebuah kode javascript
+                  dituliskan. Lalu apa lagi yang harus kamu pelajari agar bisa
+                  menjadi developer yang baik ?
                 </p>
                 <p>
-                  Beliau juga memiliki keahlian dalam pemrograman lain seperti
-                  Python, MySQL, React dan masih banyak lagi tentunya. Saat ini
-                  beliau sudah berhenti dari pekerjaannya sebagai senior
-                  software engineer dan fokus kepada mengajar course atau kelas
-                  kelas online. Berikut adalah videonya.
+                  Kamu perlu mempelajari bagaimana sebuah website bekerja dari sisi
+                  server dan proses pembelajaran ini akan jadi yang paling lama dan
+                  paling sulit dibanding seluruh pelajaran yang sebelumnya. Tetapi,
+                  selama kamu memiliki kemauan yang kuat untuk bisa menjadi seorang
+                  Software Developer maka kamu pasti bisa menyelesaikan semuanya.
+                  Semangat ya ~!
                 </p>
-                <figure>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/8TnBZ8rom9c"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </figure>
-                <p>
-                  Meski tidak mengenalnya secara langsung, beliau adalah salah
-                  satu karakter yang sangat mempengaruhi hidup saya saat ini
-                  loh, karena sempat belajar python di course onlinenya.
-                  Karenanya saya ingin berbagi tentang pengetahuan HTML dengan
-                  materi yang dijelaskan oleh Mosh Hamedani. Materi yang
-                  dijelaskan padat namun tidak terlalu banyak karena memang
-                  hanya menjelaskan sedikit gambaran pembuatan HTML.
-                </p>
-                <figure>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/qz0aGYrrlhU"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </figure>
+                              
                 <div class="tips">
                   <h2>Tips & Trik</h2>
                   <p>
-                    Agar lebih cepat mudah memahami pastikan kamu langsung
-                    melakukan percobaan setiap ada perubahan atau penggunaan tag
-                    atau elemen HTML yang baru kamu pelajari. Dan agar materi
-                    lebih dapat diserap, kamu juga bisa melakukan pencarian
-                    otodidak terkait tag atau elemen yang masih kurang
-                    dimengerti.
+                    Mempelajari javascript memang kendala yang sulit. Akan tetapi ada
+                    banyak alternatif untuk mempelajarinya dengan mencari literatur
+                    atau dokumentasi di google ataupun website lain seperti
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                      >w3schools.com</a
+                    >
+                    atau melalui situs pembelajaran yang lain. Kamu juga bisa
+                    mengontak kami jika kamu mengalami kesulitan dalam pembelajaran ya
+                    :)
                   </p>
-                </div>
+                  </div>
               </div>
             </div>
             <div class="col-md-12 selection-item item-number">
               <ul class="no-bullets">
-                <li><a href="/src/templates/css-1.html" class="btn btn-light">1</a></li>
-                <li><a href="/src/templates/css-2.html" class="btn btn-light">2</a></li>
-                <li><a href="/src/templates/css-3.html" class="btn btn-light">3</a></li>
+                <li>
+                  <a href="/src/templates/javascript-1.html" class="btn btn-light"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/templates/javascript-2.html" class="btn btn-light"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/templates/javascript-3.html" class="btn btn-light"
+                    >3</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
