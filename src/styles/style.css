@@ -270,6 +270,9 @@ footer p {
 .main-content figure.figure-tips {
   margin-bottom: 30px;
 }
+figure figcaption {
+  margin-top: 15px;
+}
 .main-content li {
   margin-bottom: 10px;
 }
@@ -316,8 +319,7 @@ footer p {
 .main-content.card {
   padding: 40px;
 }
-.main-content h2 a,
-.tips a {
+.main-content h2 a {
   color: indigo;
 }
 .tips p {

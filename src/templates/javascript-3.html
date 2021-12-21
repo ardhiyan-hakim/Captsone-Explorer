@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="/" class="nav-link"></a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="/#class-section" class="nav-link">Class</a>
@@ -86,247 +86,118 @@
               <h1 class="text-center">Praktik Javascript</h1>
               <div class="main-content card text-justify">
                 <p>
-                  Seperti yang sudah dituliskan sebelumnya, saat ini kita akan
-                  membahas tentang bagaimana sebuah metode javascript untuk
-                  dituliskan pada sebuah file HTML
+                  Karena kita sudah mempelajari tentang bagaimana menuliskan
+                  kode javascript pada file HTML, maka kita bisa mulai
+                  mempelajari apa saja yang akan kita gunakan sebagai basis
+                  dalam pembuatan project dalam skala menengah hingga besar.
+                  Tunggu apa lagi? Yuk kita mulai belajar javascript dengan
+                  menonton video di bawah.
                 </p>
-                <p>
-                  Beberapa metode untuk menuliskan kode javascript pada file
-                  HTML dapat ditulis sebagai berikut.
-                  <ol>
-                    <li>
-                      Embed. Metode ini akan menuliskan kode javascript langsung
-                      pada HTML yang akan dituliskan pada elemen body seperti yang
-                      sudah dicontohkan di halaman sebelumnya.
-                    </li>
-                    <li>
-                      Inline. Pada metode ini kita akan menuliskan kode javascript
-                      pada sebuah tag di HTML untuk melakukan trigger sesuatu yang
-                      nanti akan kita contohkan.
-                    </li>
-                    <li>
-                      Eksternal. Metode ini menggunakan sebuah tag khusus bernama
-                      script yang akan disematkan di bagian akhir tag body.
-                    </li>
-                  </ol>
-                </p>
-                <h2>1. Penulisan kode Javascript Embed</h2>
-                <p>
-                  Pada metode embed ini kita akan menggunakan tag script untuk bisa
-                  menuliskan kode javascript. Lalu apa bedanya metode embed dengan
-                  metode eksternal jika keduanya sama - sama menggunakan tag script
-                  ? Perbedaannya adalah dimana tag script ini ditaruh.
-                </p>
-                <p>
-                  Seperti yang dijelaskan sebelumnya metode eksternal sendiri
-                  menggunakan tag script yang ditaruh pada bagian akhir sebelum
-                  penutup tag body sedangkan metode embed dituliskan pada bagian
-                  akhir sebelum penutup tag head atau juga bisa di bagian akhir
-                  sebelum penutup tag body. Contohnya sebagai berikut.
-                </p>
-                    <div class="highlight">
-                  <pre
-                    tabindex="0"
-                    style="
-                      color: #f8f8f2;
-                      background-color: #282a36;
-                      -moz-tab-size: 4;
-                      -o-tab-size: 4;
-                      tab-size: 4;
-                    "
-                  ><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#ff79c6">html</span>&gt;
-    &lt;<span style="color:#ff79c6">head</span>&gt;
-        &lt;<span style="color:#ff79c6">title</span>&gt;Belajar Javascript dari Nol&lt;/<span style="color:#ff79c6">title</span>&gt;
-        &lt;<span style="color:#ff79c6">script</span>&gt;
-            <span style="color:#6272a4">// ini adalah penulisan kode javascript
-</span><span style="color:#6272a4"></span>            <span style="color:#6272a4">// di dalam tag &lt;head&gt;
-</span><span style="color:#6272a4"></span>            console.log(<span style="color:#f1fa8c">"Hello JS dari Head"</span>);
-        &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;/<span style="color:#ff79c6">head</span>&gt;
-    &lt;<span style="color:#ff79c6">body</span>&gt;
-        &lt;<span style="color:#ff79c6">p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span style="color:#ff79c6">p</span>&gt;
-        &lt;<span style="color:#ff79c6">script</span>&gt;
-            <span style="color:#6272a4">// ini adalah penulisan kode javascript
-</span><span style="color:#6272a4"></span>            <span style="color:#6272a4">// di dalam tag &lt;body&gt;
-</span><span style="color:#6272a4"></span>            console.log(<span style="color:#f1fa8c">"Hello JS dari body"</span>);
-        &lt;/<span style="color:#ff79c6">script</span>&gt;
-    &lt;/<span style="color:#ff79c6">body</span>&gt;
-&lt;/<span style="color:#ff79c6">html</span>&gt;
-                  </code></pre>
-                </div>
-                <p>
-                  Pada tag manakah yang lebih baik dari metode embed ? Banyak yang
-                  merekomendasikan untuk ditulis pada tag body. Hal ini dikarenakan
-                  akan kode dibaca secara urut berdasarkan baris mulai dari baris
-                  paling atas hingga paling bawah. Karenanya jika kamu menggunakan
-                  metode ini, dan menuliskan kode javascript pada tag head maka
-                  dalam proses loading halaman, halaman akan melakukan render pada
-                  kode javascript terlebih dahulu dan bukannya menampilkan halaman
-                  dari program HTML.
-                </p>
-                <p>
-                  Untuk saat ini waktu yang dibutuhkan halaman untuk me-load kode
-                  javascript hampir tidak terasa karena jumlah teks pada kode
-                  javascript yang masih sedikit. Tapi bisa dibayangkan apa yang akan
-                  terjadi ketika kita memiliki kode javascript hingga ratusan baris
-                  bahkan ribuan. Ini akan berpengaruh terhadap user experience yang
-                  buruk.
-                </p>
-                <h2>2. Penulisan kode Javascript Inline</h2>
-                <p>
-                  Pada metode inline ini kita akan menggunakan attribute HTML
-                  berdasarkan event handler yang disediakan HTML. Event-event ini
-                  akan melakukan trigger secara otomatis berdasarkan jenis event
-                  handler yang digunakan. Contohnya dapat dilihat seperti ini.
-                </p>
-                <div class="highlight">
-                  <pre
-                    tabindex="0"
-                    style="
-                      color: #f8f8f2;
-                      background-color: #282a36;
-                      -moz-tab-size: 4;
-                      -o-tab-size: 4;
-                      tab-size: 4;
-                    "
-                  ><code class="language-html" data-lang="html">&lt;<span style="color:#ff79c6">a</span> <span style="color:#50fa7b">href</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"#"</span> <span style="color:#50fa7b">onclick</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"alert('Yey!')"</span>&gt;Klik aku!&lt;/<span style="color:#ff79c6">a</span>&gt;
-                  </code></pre>
-                </div>
-                <p>
-                  Pada contoh diatas kita menggunakan event handler
-                  "<b>onclick</b>". Event ini akan melakukan trigger ketika tag
-                  bersangkutan di klik dan akan menjalan fungsi
-                  "<b>alert('Yey!')</b>". Kamu bisa membaca lebih lanjut tentang macam-macam event handler yang dapat digunakan untuk website kamu <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">disini</a>.
-                </p>
+                <h2 class="text-center">
+                  Javascript Course with
+                  <a
+                    href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
+                    >Traversy Media</a
+                  >
+                </h2>
                 <figure>
-                  <img 
-                    src="https://www.petanikode.com/img/js/inline-js.gif" 
-                    alt="Ilustrasi hasil penulisan kode javascript dengan metode inline"
-                    >
-                </figure>
-                <h2>3. Penulisan kode Javascript Eksternal</h2>
-                <p>
-                  Seperti yang dijelaskan sebelumnya, metode ini menggunakan tag
-                  script yang dituliskan sebelum bagian akhir sebuah tag body. Hal
-                  yang berbeda dari kedua metode sebelumnya adalah kita hanya perlu
-                  menyisipkan 1 baris kode pada HTML dan sisanya akan kita tuliskan
-                  di sebuah file terpisah dengan ekstensi "<b>.js</b>" .
-                </p>
-                <p>
-                  Daripada berlama-lama, bagaimana kalau kita langsung mulai membuat
-                  programnya. Pertama-tama kamu perlu membuat sebuah folder bernama
-                  "<b>belajar-js</b>" dan kemudian buatlah 2 buah file bernama
-                  "<b>index.html</b>" dan "<b>kode-program.js</b>" seperti pada
-                  tampilan berikut.
-                </p>
-                <div class="highlight">
-                  <pre
-                    tabindex="0"
-                    style="
-                      color: #f8f8f2;
-                      background-color: #282a36;
-                      -moz-tab-size: 4;
-                      -o-tab-size: 4;
-                      tab-size: 4;
-                    "
-                  ><code class="language-bash" data-lang="bash">belajar-js/
-├── kode-program.js
-└── index.html
-                  </code></pre>
-                </div>
-                <p>Isi dari file "<b>kode-program.js</b>" :</p>
-                <div class="highlight">
-                  <pre
-                    tabindex="0"
-                    style="
-                      color: #f8f8f2;
-                      background-color: #282a36;
-                      -moz-tab-size: 4;
-                      -o-tab-size: 4;
-                      tab-size: 4;
-                    "
-                  ><code class="language-javascript" data-lang="javascript">alert(<span style="color:#f1fa8c">"Hello, ini adalah program JS eksternal!"</span>);
-                  </code></pre>
-                </div>
-
-                <p>Isi dari file "<b>index.html</b>" :</p>
-                <div class="highlight">
-                  <pre
-                    tabindex="0"
-                    style="
-                      color: #f8f8f2;
-                      background-color: #282a36;
-                      -moz-tab-size: 4;
-                      -o-tab-size: 4;
-                      tab-size: 4;
-                    "
-                  ><code class="language-html" data-lang="html"><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#ff79c6">html</span>&gt;
-&lt;<span style="color:#ff79c6">head</span>&gt;
-    &lt;<span style="color:#ff79c6">title</span>&gt;Belajar Javascript dari Nol&lt;/<span style="color:#ff79c6">title</span>&gt;
-&lt;/<span style="color:#ff79c6">head</span>&gt;
-&lt;<span style="color:#ff79c6">body</span>&gt;
-    &lt;<span style="color:#ff79c6">p</span>&gt;Tutorial Javascript untuk Pemula&lt;/<span style="color:#ff79c6">p</span>&gt;
-
-    <span style="color:#6272a4">&lt;!-- Menyisipkan kode js eksternal --&gt;</span>
-    &lt;<span style="color:#ff79c6">script</span> <span style="color:#50fa7b">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"kode-program.js"</span>&gt;&lt;/<span style="color:#ff79c6">script</span>&gt;
-&lt;/<span style="color:#ff79c6">body</span>&gt;
-&lt;/<span style="color:#ff79c6">html</span>&gt;
-                  </code></pre>
-                </div>
-                <p>Hasilnya dapat dilihat sebagai berikut.</p>
-                <figure>
-                  <img 
-                    src="https://www.petanikode.com/img/js/js-eksternal.png" 
-                    alt="Hasil ilustrasi penulisan kode dengan metode eksternal"
-                    >
+                  <iframe
+                    class="content"
+                    height="100%"
+                    src="https://www.youtube.com/embed/hdI2bqOjy3c"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </figure>
                 <p>
-                  Selamat ya, kamu saat ini telah berhasil menyelesaikan
-                  pembelajaran dasar tentang bagaimana sebuah kode javascript
-                  dituliskan. Lalu apa lagi yang harus kamu pelajari agar bisa
-                  menjadi developer yang baik ?
+                  Brad Traversy telah menjadi programmer selama sekitar 12 tahun
+                  dan mengajar selama hampir 5 tahun. Dia adalah pemilik
+                  Traversy Media yang merupakan saluran YouTube pengembangan web
+                  yang sukses dan berspesialisasi dalam segala hal mulai dari
+                  HTML5 hingga kerangka kerja ujung depan seperti Angular serta
+                  teknologi sisi server seperti Node.js, PHP, dan Python. Brad
+                  telah menguasai menjelaskan topik yang sangat kompleks dengan
+                  cara yang sederhana yang sangat dimengerti.
                 </p>
+
+                <h2 class="text-center">
+                  Javascript Course with
+                  <a
+                    href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"
+                    >freeCodeCamp.org</a
+                  >
+                </h2>
+                <figure>
+                  <iframe
+                    class="content"
+                    height="100%"
+                    src="https://www.youtube.com/embed/PkZNo7MFNFg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
                 <p>
-                  Kamu perlu mempelajari bagaimana sebuah website bekerja dari sisi
-                  server dan proses pembelajaran ini akan jadi yang paling lama dan
-                  paling sulit dibanding seluruh pelajaran yang sebelumnya. Tetapi,
-                  selama kamu memiliki kemauan yang kuat untuk bisa menjadi seorang
-                  Software Developer maka kamu pasti bisa menyelesaikan semuanya.
-                  Semangat ya ~!
+                  freeCodeCamp adalah organisasi nirlaba yang terdiri dari
+                  platform web pembelajaran interaktif, forum komunitas online,
+                  ruang obrolan, publikasi online, dan organisasi lokal yang
+                  bermaksud membuat pembelajaran pengembangan web dapat diakses
+                  oleh siapa saja.
                 </p>
-                              
+
                 <div class="tips">
                   <h2>Tips & Trik</h2>
                   <p>
-                    Mempelajari javascript memang kendala yang sulit. Akan tetapi ada
-                    banyak alternatif untuk mempelajarinya dengan mencari literatur
-                    atau dokumentasi di google ataupun website lain seperti
-                    <a href="https://www.w3schools.com/js/default.asp" target="_blank"
-                      >w3schools.com</a
-                    >
-                    atau melalui situs pembelajaran yang lain. Kamu juga bisa
-                    mengontak kami jika kamu mengalami kesulitan dalam pembelajaran ya
-                    :)
+                    Selama pembelajaran javascript, ada beberapa hal yang perlu
+                    diatur jika anda menggunakan OS Windows yakni environment
+                    variable yang perlu anda deklarasikan jika anda akan
+                    menginstal node js atau yang lainnya. Penyelesaian terhadap
+                    masalah tersebut dan anda temukan
+                    <a
+                      href="https://sulhi.id/setting-path-environment-variable-di-windows-10/"
+                      >disini</a
+                    >.
                   </p>
-                  </div>
+                  <p>
+                    Tidak lupa juga, akan ada banyak bug yang terjadi selama
+                    proses pembelajaran dan pengembangan. Anda bisa mencari
+                    solusi terhadap bug yang anda temukan dengan mencarinya di
+                    google dengan keyword dari pesan error yang ditampilkan.
+                    Kamu juga bisa bertanya langsung dengan orang-orang lain
+                    lewat forum seperti
+                    <a href="https://stackoverflow.com/">Stack Overflow</a> dan
+                    beragam alternatif lain yang dapat anda baca lebih lanjut
+                    <a
+                      href="https://medium.com/@techloop.io/tired-of-stack-overflow-and-github-here-are-the-alternatives-c970d64a0bd3"
+                      >disini</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-md-12 selection-item item-number">
               <ul class="no-bullets">
                 <li>
-                  <a href="/src/templates/javascript-1.html" class="btn btn-light"
+                  <a
+                    href="/src/templates/javascript-1.html"
+                    class="btn btn-light"
                     >1</a
                   >
                 </li>
                 <li>
-                  <a href="/src/templates/javascript-2.html" class="btn btn-light"
+                  <a
+                    href="/src/templates/javascript-2.html"
+                    class="btn btn-light"
                     >2</a
                   >
                 </li>
                 <li>
-                  <a href="/src/templates/javascript-3.html" class="btn btn-light"
+                  <a
+                    href="/src/templates/javascript-3.html"
+                    class="btn btn-light"
                     >3</a
                   >
                 </li>
