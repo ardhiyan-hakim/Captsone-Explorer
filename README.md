@@ -29,7 +29,6 @@
 ```
 - Buka web browser, kemudian ketikkan `localhost:5000` pada kolom url.
 - Program telah berjalan.
-<br>
 
 # Atribusi
 
