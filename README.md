@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/logo-app.png" alt="explorer Logo">
+  <img src="https://ibb.co/486hh3B" alt="explorer Logo">
 </p>
 
 # explorer
