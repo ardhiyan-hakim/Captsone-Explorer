@@ -37,3 +37,11 @@
  - Nodemon versi 2.0.15
  - Express versi 4.17.2
  - Morgan versi 1.10.0
+
+# Kekurangan Project 
+
+ * Fitur Login dan Signup yang belum ada, dan tidak adanya fitur kembali ke home pada halaman signup dan login.
+ * Jumlah materi yang sangat terbatas, baik dari segi kejelasan maupun detail materi yang dibutuhkan dalam pemahaman materi.
+ * Project belum dilakukan hosting sehingga hanya bisa diakses secara lokal.
+ * Belum adanya optimasi pada berkas atau resource yang diperlukan, sehingga memberikan user experience yang cukup lambat.
+ * Isi konten yang masih bersifat statis dan belum bersifat dinamis.
