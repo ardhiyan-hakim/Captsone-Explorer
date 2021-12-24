@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/img/logo-app.png" alt="explorer Logo">
+</p>
 
 # explorer
 
