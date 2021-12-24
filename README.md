@@ -1,5 +1,6 @@
 <p align="center">
-[![logo-app.png](https://i.postimg.cc/7YrfMkCL/logo-app.png)](https://postimg.cc/pykWR3JN)</p>
+  <img src="https://i.postimg.cc/7YrfMkCL/logo-app.png" alt="explorer Logo">
+</p>
 
 # explorer
 
